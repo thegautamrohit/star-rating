@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.star_rating_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  gap: 20px;
+}
+
+.star_rating_wrap > li {
+  list-style: none;
+}
+
+.star_mono::before {
+  content: "\2605";
+  color: #d7d7d7;
+  font-size: 100px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star_mono.active::before {
+  color: gold;
+}
+
+#score {
+  text-align: center;
+  font-size: larger;
+  margin: 20px auto;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
